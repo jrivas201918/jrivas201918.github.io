@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Rivas | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <nav id="navbar">
+                <div class="logo">Joshua Rivas</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Joshua</span></h1>
+                <h2>I'm a <span class="typed-text"></span></h2>
+                <p>Web Developer | Designer | Creative Problem Solver</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/MyPicture.jpg" alt="Your Name">
+                </div>
+                <div class="about-text">
+                    <p>I’m Joshua Rivas, a recent graduate with a Bachelor of Science in Information Technology from STI College Las Piñas. I’m passionate about software development and have a strong interest in building efficient, user-focused applications. I’ve worked on various personal and academic projects, many of which are available on my GitHub, showcasing my enthusiasm for learning and experimenting with different tools and technologies.</p>
+                    <p>I’m particularly interested in roles related to software engineering, IT support, and system development. I thrive in collaborative environments and am always eager to take on new challenges that push me to grow both technically and professionally. Currently, I’m seeking an opportunity where I can contribute meaningfully while continuing to expand my skills in a real-world setting.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-user"></i>
+                            <span>Name:</span> Joshua Tegio Rivas
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Address:</span> 45 Batibot Complex, Pamplona Tres, Las Piñas City, Philippines
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email:</span> joshuarivas19990820@gmail.com
+                        </div>
+                    </div>
+                    <a href="Rivas_Joshua_T.pdf" class="btn primary-btn" download>Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">Java, C++, C#, HTML5</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">CSS3</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">React</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Additional Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">SEO Basics</span>
+                        <span class="skill-tag">WordPress</span>
+                        <span class="skill-tag">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Unity Game</button>
+                <button class="filter-btn" data-filter="app">App Development</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="images/BallMaze.png" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>3D Android Game</h3>
+                        <p>A 3D Android maze game built in Unity featuring tilt-based controls, dynamic obstacle challenges, and progressive level design for an engaging user experience.</p>
+                        <div class="project-tech">
+                            <span>Unity</span>
+                            <span>Blender</span>
+                            <span>C#</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small-btn"><i class="fas fa-link"></i> Live Demo</a>
+                            <a href="#" class="btn small-btn"><i class="fab fa-unity"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-category="app">
+                    <div class="project-img">
+                        <img src="images/project2.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Manager App</h3>
+                        <p>A productivity app for task management with drag-and-drop functionality.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small-btn"><i class="fas fa-link"></i> Live Demo</a>
+                            <a href="#" class="btn small-btn"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-category="other">
+                    <div class="project-img">
+                        <img src="images/project3.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Template</h3>
+                        <p>A customizable portfolio template for creative professionals.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small-btn"><i class="fas fa-link"></i> Live Demo</a>
+                            <a href="#" class="btn small-btn"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>joshuarivas19990820@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+63-(09)-6124-20439</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Address</h3>
+                        <p>45 Batibot Complex, Pamplona Tres, Las Piñas City, Philippines</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/joshua-rivas-b9ab02347/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/jrivas201918" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/JoshuaRiva7842" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; 2025 Joshua Rivas. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
