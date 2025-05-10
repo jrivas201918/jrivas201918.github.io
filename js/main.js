@@ -3,20 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile Navigation Toggle
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 7a235ab (Reinitialize repository with updates)
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
         navLinks.classList.toggle('active');
     });
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 7a235ab (Reinitialize repository with updates)
     // Close mobile menu when clicking a nav link
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
@@ -24,11 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.classList.remove('active');
         });
     });
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 7a235ab (Reinitialize repository with updates)
     // Header scroll effect
     const header = document.querySelector('header');
     window.addEventListener('scroll', () => {
@@ -38,11 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.remove('scrolled');
         }
     });
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 7a235ab (Reinitialize repository with updates)
     // Typing effect
     const typedTextElement = document.querySelector('.typed-text');
     const professions = ['Aspiring Software Engineer', 'Java & C# Developer', 'Tech Problem Solver'];
@@ -50,17 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let charIndex = 0;
     let isDeleting = false;
     let typingDelay = 200;
-<<<<<<< HEAD
-    
-    function typeEffect() {
-        const currentProfession = professions[professionIndex];
-        
-=======
 
     function typeEffect() {
         const currentProfession = professions[professionIndex];
 
->>>>>>> 7a235ab (Reinitialize repository with updates)
         if (isDeleting) {
             // Remove characters
             typedTextElement.textContent = currentProfession.substring(0, charIndex - 1);
@@ -72,55 +49,40 @@ document.addEventListener('DOMContentLoaded', () => {
             charIndex++;
             typingDelay = 200;
         }
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> 7a235ab (Reinitialize repository with updates)
         // If word is complete
         if (!isDeleting && charIndex === currentProfession.length) {
             isDeleting = true;
             typingDelay = 1000; // Pause at end of word
-<<<<<<< HEAD
-        } 
-=======
         }
->>>>>>> 7a235ab (Reinitialize repository with updates)
         // If word is deleted
         else if (isDeleting && charIndex === 0) {
             isDeleting = false;
             professionIndex = (professionIndex + 1) % professions.length;
             typingDelay = 500; // Pause before starting new word
         }
-<<<<<<< HEAD
-        
+
         setTimeout(typeEffect, typingDelay);
     }
-    
+
     // Start typing effect if element exists
     if (typedTextElement) {
         setTimeout(typeEffect, 1000);
     }
-    
-=======
 
-        setTimeout(typeEffect, typingDelay);
-    }
-    
->>>>>>> 7a235ab (Reinitialize repository with updates)
     // Project filtering
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
-    
+
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
             // Remove active class from all buttons
             filterButtons.forEach(btn => btn.classList.remove('active'));
             // Add active class to clicked button
             button.classList.add('active');
-            
+
             const filterValue = button.getAttribute('data-filter');
-            
+
             projectCards.forEach(card => {
                 if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
                     card.style.display = 'block';
@@ -138,25 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
-<<<<<<< HEAD
-    
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                const offsetTop = targetElement.offsetTop - 70; // Adjust for header height
-                
-=======
-
-    // Start typing effect if element exists
-    if (typedTextElement) {
-        setTimeout(typeEffect, 1000);
-    }
 
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -169,7 +112,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (targetElement) {
                 const offsetTop = targetElement.offsetTop - 70; // Adjust for header height
 
->>>>>>> 7a235ab (Reinitialize repository with updates)
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'
@@ -177,80 +119,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-<<<<<<< HEAD
-    
-    // Contact form submission
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Collect form data
-            const formData = {
-                name: this.querySelector('input[name="name"]').value,
-                email: this.querySelector('input[name="email"]').value,
-                subject: this.querySelector('input[name="subject"]').value,
-                message: this.querySelector('textarea[name="message"]').value
-            };
-            
-            // Here you would typically send the data to your server or email service
-            // For demonstration, we'll log it and show a success message
-            console.log('Form data:', formData);
-            
-            // Show success message
-            const formElements = contactForm.querySelectorAll('input, textarea, button');
-            formElements.forEach(el => el.disabled = true);
-            
-            const successMessage = document.createElement('div');
-            successMessage.className = 'success-message';
-            successMessage.textContent = 'Your message has been sent successfully!';
-            successMessage.style.color = 'green';
-            successMessage.style.padding = '15px 0';
-            contactForm.appendChild(successMessage);
-            
-            // Reset form after a delay
-            setTimeout(() => {
-                contactForm.reset();
-                formElements.forEach(el => el.disabled = false);
-                successMessage.remove();
-            }, 3000);
-        });
-    }
-    
-    // Animate elements on scroll
-    const animateElements = document.querySelectorAll('.about-image, .about-text, .skill-category, .project-card, .contact-item, .contact-form');
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animated');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1 });
-    
-    animateElements.forEach(element => {
-        // Add initial animation class
-        element.classList.add('fade-in');
-        observer.observe(element);
-    });
-    
-    // Add CSS for animations
-    const style = document.createElement('style');
-    style.textContent = `
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-        .animated {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    `;
-    document.head.appendChild(style);
-=======
 
+    // Contact form submission
     const contactForm = document.getElementById('contactForm');
 
     if (contactForm) {
@@ -295,5 +165,4 @@ document.addEventListener('DOMContentLoaded', () => {
         // Remove message after a delay
         setTimeout(() => messageDiv.remove(), 3000);
     }
->>>>>>> 7a235ab (Reinitialize repository with updates)
 });
