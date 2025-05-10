@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 // Send form data to the server
-                const response = await fetch('http://192.168.1.37:8080/send-email', {
+                const response = await fetch('https://965e-111-235-88-60.ngrok-free.app/send-email', { // Updated with ngrok HTTPS URL
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formData)
