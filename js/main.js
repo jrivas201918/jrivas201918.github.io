@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Typing effect
     const typedTextElement = document.querySelector('.typed-text');
-    const professions = ['Web Developer', 'UI/UX Designer', 'Freelancer'];
+    const professions = ['Aspiring Software Engineer', 'Java & C# Developer', 'Tech Problem Solver'];
     let professionIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
